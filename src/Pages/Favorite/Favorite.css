@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.subtitle-favorite {
+    margin: 10px auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 90%;
+    border-bottom: 2px solid #2196f3;
+    color: #2196f3;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal;
+    font-size: 2em;
+    text-align: center;
+}
+
+.centered {
+    text-align: center;
+}
+
+.favorite-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5%;
+}
+
+.favorite-form {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.favorite-form label {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: block;
+    color: black;
+}
+
+.favorite-form input,
+.favorite-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: #fff;
+    color: black;
+    transition: border-bottom-color 0.3s ease-in-out;
+    outline: none;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, #2196f3, #2196f3);
+    border-image-slice: 1;
+}
+
+.favorite-form input:first-of-type,
+.favorite-form select:first-of-type {
+    margin-top: 40px;
+}
+
+.favorite-form input:focus,
+.favorite-form select:focus {
+    outline: none;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, #91ff61, #91ff61);
+    border-image-slice: 1;
+}
+
+.favorite-form button {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.favorite-form button:hover {
+    background-color: #007bff;
+}
+
+.favorite-form .cancel-button {
+    background-color: #b30000;
+    margin-top: 10px;
+}
+
+.favorite-form .cancel-button:hover {
+    background-color: #ff0000;
+}
+
+.toggle-form-button {
+    margin: 20px auto;
+    display: block;
+    width: 200px;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.toggle-form-button:hover {
+    background-color: #007bff;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #0056b3;
+    border-left: none;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-container button:hover {
+    background-color: #007bff;
+}
+
+.favorite-summary {
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.favorite-table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 10px; /* Añade espacio entre celdas */
+    font-family: 'Open Sans', sans-serif !important;
+    margin-top: 20px;
+}
+
+.favorite-table th,
+.favorite-table td {
+    padding: 15px;
+    background-color: #f9f9f9; /* Color de fondo de las celdas */
+    border: 1px solid #ddd; /* Borde de las celdas */
+    text-align: center;
+    border-radius: 5px; /* Bordes redondeados para el espaciado */
+}
+
+.favorite-table th {
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.delete-icon {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    color: red;
+}
+
+.centered-table {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+/* Otros estilos se mantienen sin cambios */

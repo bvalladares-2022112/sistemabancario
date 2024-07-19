@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.subtitle-shopping {
+    margin: 10px 7%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 80%;
+    border-bottom: 2px solid #2196f3;
+    color: #2196f3;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.shopping-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 5%;
+}
+
+.shopping-form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.shopping-summary {
+    width: 100%;
+}
+
+.shopping-summary h2 {
+    margin-bottom: 30px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: normal;
+}
+
+.shopping-form label {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: block;
+    color: black;
+}
+
+.shopping-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: #fff;
+    color: black;
+    transition: border-bottom-color 0.3s ease-in-out;
+    outline: none;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, #2196f3, #2196f3);
+    border-image-slice: 1;
+}
+
+.shopping-form input:focus {
+    outline: none;
+    border-bottom: 2px solid;
+    border-image-source: linear-gradient(to right, #91ff61, #91ff61);
+    border-image-slice: 1;
+}
+
+.shopping-form button {
+    margin-top: 55px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.shopping-form button:hover {
+    background-color: #007bff;
+}
+
+.shopping-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.purchase-item {
+    background-color: #dbe1ef;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.purchase-item p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+    .shopping-container {
+        flex-direction: row;
+        padding: 55px 100px 20px 100px;
+    }
+
+    .shopping-form {
+        width: 40%;
+    }
+
+    .shopping-summary {
+        width: 45%;
+    }
+
+    .purchase-item {
+        width: 60%;
+        height: 220px;
+    }
+}
+
+.shopping-form .cancel-button {
+    background-color: #b30000;
+    margin-top: 10px;
+}
+
+.shopping-form .cancel-button:hover {
+    background-color: #ff0000;
+}

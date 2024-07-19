@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login-header {
+  background-color: #0056b3;
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-header .bank-logo {
+  margin-left: 20px;
+}
+
+.login-content {
+  display: flex;
+  flex: 1;
+}
+
+.login-left {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)), url('../../assets/FondoLoginMon.jpg');
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bank-message {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-bottom: 10px;
+  color: #2196f3;
+}
+
+.login-access {
+  margin-bottom: 20px;
+  color: black;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group #email,
+.form-group #password,
+.form-group #nickname,
+.form-group #name,
+.form-group #dpi,
+.form-group #username,
+.form-group #workingName,
+.form-group #address,
+.form-group #monthlyIncome,
+.form-group #availableBalance,
+.form-group #phoneNumber {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 2px solid transparent;
+  background-color: #fff;
+  color: black;
+  transition: border-bottom-color 0.3s ease-in-out;
+  outline: none;
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(to right, #2196f3, #2196f3);
+  border-image-slice: 1;
+}
+
+.form-group #email:focus,
+.form-group #password:focus {
+  outline: none;
+  border-bottom: 2px solid;
+  border-image-source: linear-gradient(to right, #91ff61, #91ff61);
+  border-image-slice: 1;
+}
+
+.create-account-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-account-btn:hover {
+  background-color: #0056b3;
+}
+
+.login-tips {
+  text-align: center;
+  background: #003865;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-tips .tips-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.login-tips .tip-text {
+  text-align: center;
+  animation: fadeInOut 10s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  90% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.suggestions {
+  text-align: center;
+  position: relative;
+  top: 0.3em;
+}
+
+.suggestion-block {
+  font-size: small;
+  display: flex;
+  cursor: default;
+  padding-right: 0.5em;
+}
+
+.suggestion-signup {
+  font-size: small;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.suggestion-block,
+.suggestion-signup {
+  display: inline-block;
+}
+
+.suggestion-signup:hover {
+  color: #1976d2;
+}

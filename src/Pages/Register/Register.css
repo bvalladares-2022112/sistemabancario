@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+ 
+.register-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+ 
+.register-header {
+  background-color: #1F81B9;
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.register-header .bank-logo {
+  margin-left: 20px;
+}
+ 
+.register-content {
+  display: flex;
+  flex: 1;
+  background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)), url('https://www.bibanking.bi.com.gt/Contenido/img/daybma.jpg') no-repeat center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+ 
+.register-form {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.register-form h2 {
+  margin-bottom: 20px;
+  color: #1F81B9;
+}
+ 
+.register-access {
+  margin-bottom: 30px;
+  color: black;
+}
+ 
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+  gap: 20px; /* Espacio entre los campos */
+}
+ 
+.form-group {
+  width: 48%;
+  text-align: left;
+}
+ 
+.form-group.center {
+  width: 100%;
+  text-align: center;
+}
+ 
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+ 
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+ 
+.button-row button {
+  width: 48%;
+}
+ 
+.button-row .create-account-btn {
+  margin-left: 10px;
+}
+ 
+button {
+  padding: 15px;
+  background-color: #1F81B9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+button:hover {
+  background-color: #0056b3;
+}
+ 
+.form-group.remember-me {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+ 
+.form-group.remember-me input {
+  margin-right: 10px;
+}
+ 
+.captcha {
+  margin: 20px 0;
+}
+ 
+@media (max-width: 768px) {
+  .register-form {
+    width: 90%;
+    margin: 20px auto;
+  }
+ 
+  .form-row {
+    flex-direction: column;
+    gap: 0; /* Quita el espacio entre filas en móviles */
+  }
+ 
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+ 
+  .button-row {
+    flex-direction: column;
+  }
+ 
+  .button-row button {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
